@@ -5,30 +5,25 @@ using UnityEngine;
 public class CharMovingPlatformDetector : MonoBehaviour
 {
     GameObject player;
-    bool isBobPlatformed = false;
 
-    void OnControllerColliderHit(ControllerColliderHit hit)
+    void OnTriggerEnter(Collider other)
     {
-        if(hit.gameObject.tag == "MovingPlatform")
-       {
-            Debug.Log("test");
-            player = GameObject.Find("Bob");
-            player.transform.parent = hit.gameObject.transform;
-            isBobPlatformed = true;
-       } 
-    }
-
-    void Update()
-    {
-        if(isBobPlatformed)
+        Debug.Log(other + " is inside OnTriggerEnter");
+        if (other.tag == "MovingPlatform")
         {
-            player = GameObject.Find("Bob");
-            if(Input.GetButtonDown("Jump"))
-            {
-                player.transform.SetParent(null);
-                isBobPlatformed = false;
-            }
+            Debug.Log("The player is on the platform");
+            transform.parent = other.transform;
+            //isBobPlatformed = true;
         }
     }
-    
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "MovingPlatform")
+        {
+            player = GameObject.Find("Bob");
+            player.transform.SetParent(null);
+        }
+    }
+
 }

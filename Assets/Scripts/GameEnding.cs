@@ -12,7 +12,7 @@ public class GameEnding : MonoBehaviour
     int howManyDiamondsMax;
     public TextMeshProUGUI coinCount;
     public TextMeshProUGUI diamondCount;
-    private bool istriggered=false;
+    private bool istriggered = false;
     void Start() {
         {
             GameObject[] gameObjects1;
@@ -25,12 +25,19 @@ public class GameEnding : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        if(other.gameObject.tag == "Player" && istriggered == false)
+        if (other.gameObject.tag == "Player" && istriggered == false)
         {
-            coinCount.text = coinCount.text +"/"+howManyCoinsMax;
-            diamondCount.text = diamondCount.text+"/"+howManyDiamondsMax;
+            coinCount.text = coinCount.text + "/" + howManyCoinsMax;
+            diamondCount.text = diamondCount.text + "/" + howManyDiamondsMax;
             endingScreen.SetActive(true);
-            istriggered=true;
+            istriggered = true;
+            if (Input.anyKey) ;
+            {      
+                Application.Quit();
+            }
         }
     }
+
+    
+    
 }
