@@ -10,6 +10,8 @@ using UnityEngine;
 public class ThirdPersonMovement : MonoBehaviour
 {
     public CharacterController controller;
+    public GameObject player;
+    public GameObject respawnPoint;
     public Transform cam;
 
     public float speed = 6;
@@ -38,7 +40,7 @@ public class ThirdPersonMovement : MonoBehaviour
     // Update is called once per frame
 
 
-    
+
 
     void Start()
     {
@@ -59,9 +61,9 @@ public class ThirdPersonMovement : MonoBehaviour
             velocity.y = -2f;
         }
 
-        
 
-        if (Input.GetButtonDown("Jump") &&isGrounded)
+
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             jumpAudioSource.Play();
             controller.slopeLimit = 100.0f;
@@ -73,13 +75,18 @@ public class ThirdPersonMovement : MonoBehaviour
             m_Animator.SetBool("isJumping", false);
         }
 
-        if(Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
             m_Animator.SetBool("isAttacking", true);
             kickAudioSource.Play();
         }
-        else{
+        else
+        {
             m_Animator.SetBool("isAttacking", false);
+        }
+        if (Input.GetKeyDown("r"))
+        {
+            player.transform.position = respawnPoint.transform.position;
         }
         //gravity
         velocity.y += gravity * Time.deltaTime;
@@ -97,7 +104,7 @@ public class ThirdPersonMovement : MonoBehaviour
             m_Animator.SetBool("isRunning", false);
         }
 
-        if((horizontal !=0 || vertical !=0) && isGrounded)
+        if ((horizontal != 0 || vertical != 0) && isGrounded)
         {
             if (!m_AudioSource.isPlaying)
             {
@@ -106,13 +113,13 @@ public class ThirdPersonMovement : MonoBehaviour
         }
         else
         {
-            m_AudioSource.Stop ();
+            m_AudioSource.Stop();
         }
 
 
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-        if(direction.magnitude >= 0.1f)
+        if (direction.magnitude >= 0.1f)
         {
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
@@ -125,12 +132,12 @@ public class ThirdPersonMovement : MonoBehaviour
 
         isWatered = Physics.CheckSphere(groundCheck.position, groundDistance, waterMask);
 
-        if(isWatered)
-        {
-            transform.position=startPosition;
-        }
-        
+        // if(isWatered)
+        // {
+        //     transform.position=startPosition;
+        // }
+
     }
 
-    
+
 }
