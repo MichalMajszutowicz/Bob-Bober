@@ -14,6 +14,7 @@ public class ScoreManager : MonoBehaviour
     int DiamondElements;
     int CoinElements;
     // Start is called before the first frame update
+
     void Start()
     {
         if(instance==null)

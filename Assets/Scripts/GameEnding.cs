@@ -30,6 +30,7 @@ public class GameEnding : MonoBehaviour
             coinCount.text = coinCount.text + "/" + howManyCoinsMax;
             diamondCount.text = diamondCount.text + "/" + howManyDiamondsMax;
             endingScreen.SetActive(true);
+            TimerController.instance.EndTimer();
             istriggered = true;
             if (Input.GetKeyDown("space")) 
             {      
