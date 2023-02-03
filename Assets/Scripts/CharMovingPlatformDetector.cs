@@ -6,7 +6,7 @@ public class CharMovingPlatformDetector : MonoBehaviour
 {
     GameObject player;
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
         Debug.Log(other + " is inside OnTriggerEnter");
         if (other.tag == "MovingPlatform")

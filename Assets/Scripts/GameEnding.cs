@@ -31,7 +31,7 @@ public class GameEnding : MonoBehaviour
             diamondCount.text = diamondCount.text + "/" + howManyDiamondsMax;
             endingScreen.SetActive(true);
             istriggered = true;
-            if (Input.anyKey) ;
+            if (Input.GetKeyDown("space")) 
             {      
                 Application.Quit();
             }
