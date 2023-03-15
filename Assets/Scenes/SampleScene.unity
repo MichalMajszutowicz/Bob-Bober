@@ -1972,7 +1972,7 @@ GameObject:
   - component: {fileID: 200977442}
   - component: {fileID: 200977444}
   - component: {fileID: 200977443}
-  m_Layer: 9
+  m_Layer: 31
   m_Name: MovPlat
   m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
@@ -2023,7 +2023,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.388565, y: 0.11237812, z: 4.4406776}
+  m_Size: {x: 4.388565, y: 1.32, z: 4.4406776}
   m_Center: {x: -8.550446, y: -1.1163745, z: 1.0238857}
 --- !u!1 &205862330 stripped
 GameObject:
@@ -2059,7 +2059,7 @@ GameObject:
   - component: {fileID: 206019742}
   - component: {fileID: 206019744}
   - component: {fileID: 206019743}
-  m_Layer: 9
+  m_Layer: 31
   m_Name: MovPlat
   m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
@@ -2112,7 +2112,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.0205154, y: 0.435771, z: 4.4406776}
+  m_Size: {x: 4.0205154, y: 1.32, z: 4.4406776}
   m_Center: {x: -8.366421, y: -1.537045, z: 1.0238857}
 --- !u!1 &211972684 stripped
 GameObject:
@@ -3774,7 +3774,7 @@ GameObject:
   - component: {fileID: 433582497}
   - component: {fileID: 433582499}
   - component: {fileID: 433582498}
-  m_Layer: 9
+  m_Layer: 31
   m_Name: MovPlat
   m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
@@ -3827,7 +3827,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.589966, y: 0.4566841, z: 4.5598354}
+  m_Size: {x: 4.589966, y: 1.32, z: 4.5598354}
   m_Center: {x: -8.413391, y: -0.9442215, z: 1.0834646}
 --- !u!1001 &435650984
 PrefabInstance:
@@ -4287,7 +4287,7 @@ GameObject:
   - component: {fileID: 484294224}
   - component: {fileID: 484294226}
   - component: {fileID: 484294225}
-  m_Layer: 9
+  m_Layer: 31
   m_Name: MovPlat
   m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
@@ -4338,7 +4338,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.388565, y: 0.11237812, z: 4.4406776}
+  m_Size: {x: 4.388565, y: 1.32, z: 4.4406776}
   m_Center: {x: -8.550446, y: -1.1163745, z: 1.0238857}
 --- !u!1001 &495568769
 PrefabInstance:
@@ -5004,7 +5004,7 @@ GameObject:
   - component: {fileID: 570666841}
   - component: {fileID: 570666843}
   - component: {fileID: 570666842}
-  m_Layer: 9
+  m_Layer: 31
   m_Name: MovPlat
   m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
@@ -5055,7 +5055,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.388565, y: 0.11237812, z: 4.4406776}
+  m_Size: {x: 4.388565, y: 1.32, z: 4.4406776}
   m_Center: {x: -8.550446, y: -1.1163745, z: 1.0238857}
 --- !u!1001 &573759894
 PrefabInstance:
@@ -8105,7 +8105,7 @@ GameObject:
   - component: {fileID: 930574133}
   - component: {fileID: 930574135}
   - component: {fileID: 930574134}
-  m_Layer: 9
+  m_Layer: 31
   m_Name: MovPlat
   m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
@@ -8156,7 +8156,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.388565, y: 0.11237812, z: 4.4406776}
+  m_Size: {x: 4.388565, y: 1.32, z: 4.4406776}
   m_Center: {x: -8.550446, y: -1.1163745, z: 1.0238857}
 --- !u!1 &935271234
 GameObject:
@@ -11490,7 +11490,7 @@ GameObject:
   - component: {fileID: 1339336203}
   - component: {fileID: 1339336205}
   - component: {fileID: 1339336204}
-  m_Layer: 9
+  m_Layer: 31
   m_Name: MovPlat
   m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
@@ -11541,7 +11541,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.388565, y: 0.11237812, z: 4.4406776}
+  m_Size: {x: 4.388565, y: 1.32, z: 4.4406776}
   m_Center: {x: -8.550446, y: -1.1163745, z: 1.0238857}
 --- !u!1001 &1352493927
 PrefabInstance:
@@ -12103,7 +12103,7 @@ GameObject:
   - component: {fileID: 1382988589}
   - component: {fileID: 1382988591}
   - component: {fileID: 1382988590}
-  m_Layer: 9
+  m_Layer: 31
   m_Name: MovPlat
   m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
@@ -12154,7 +12154,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.161499, y: 0.435771, z: 4.865719}
+  m_Size: {x: 5.161499, y: 1.32, z: 4.865719}
   m_Center: {x: -8.4574585, y: -1.537045, z: 0.9901447}
 --- !u!1001 &1384085774
 PrefabInstance:
@@ -12556,7 +12556,7 @@ GameObject:
   - component: {fileID: 1414808025}
   - component: {fileID: 1414808027}
   - component: {fileID: 1414808026}
-  m_Layer: 9
+  m_Layer: 31
   m_Name: MovPlat
   m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
@@ -12607,7 +12607,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.388565, y: 0.11237812, z: 4.4406776}
+  m_Size: {x: 4.388565, y: 1.32, z: 4.4406776}
   m_Center: {x: -8.550446, y: -1.1163745, z: 1.0238857}
 --- !u!1 &1423988921 stripped
 GameObject:

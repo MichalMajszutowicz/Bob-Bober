@@ -6,24 +6,23 @@ public class CharMovingPlatformDetector : MonoBehaviour
 {
     GameObject player;
 
-    void OnTriggerStay(Collider other)
-    {
+     void OnTriggerEnter(Collider other) {
         Debug.Log(other + " is inside OnTriggerEnter");
-        if (other.tag == "MovingPlatform")
-        {
+        if(other.gameObject.layer == LayerMask.NameToLayer("MovPlatform")) {
             Debug.Log("The player is on the platform");
             transform.parent = other.transform;
             //isBobPlatformed = true;
         }
-    }
+     }
 
-    void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "MovingPlatform")
+     void OnTriggerExit(Collider other)
+     {
+        if(other.gameObject.layer == LayerMask.NameToLayer("MovPlatform"))
         {
             player = GameObject.Find("Bob");
             player.transform.SetParent(null);
         }
-    }
+     }
 
+    
 }
