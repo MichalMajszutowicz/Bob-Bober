@@ -37,10 +37,10 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - AttackRange
+  - GettingDamaged
+  - Character
+  - Enemy
   - Next
   - MovPlatform
   m_SortingLayers:
