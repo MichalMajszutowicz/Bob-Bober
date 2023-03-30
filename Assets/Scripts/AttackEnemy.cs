@@ -4,12 +4,24 @@ using UnityEngine;
 
 public class AttackEnemy : MonoBehaviour
 {
-     public void OnTriggerEnter(Collider other)
+    bool isAttacking = false;
+
+    void Update()
     {
-        if(other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        if(Input.GetButtonDown("Fire1"))
+        {
+            isAttacking = true;
+        }
+    }
+
+     public void OnTriggerStay(Collider other)
+    {
+        if(other.gameObject.layer == LayerMask.NameToLayer("Enemy") && isAttacking)
         {
             Debug.Log("atakuje");
-            Destroy(other.gameObject);
+
+            Destroy(other.gameObject,0.5f);
+            isAttacking = false;
         }
     }
 }
