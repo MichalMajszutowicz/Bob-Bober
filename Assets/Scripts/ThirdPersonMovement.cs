@@ -137,7 +137,15 @@ public class ThirdPersonMovement : MonoBehaviour
         //     transform.position=startPosition;
         // }
 
+
     }
 
+    void FixedUpdate()
+    {
+        if(DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            return;
+        }
+    }
 
 }
